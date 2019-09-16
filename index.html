@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="start">Start Quiz</div>
+		<div id="quiz" style="display: none">
+			<div id="question"></div>
+			<div id="qImg"></div>
+			<div id="choices"><!-- This is the 3 options. It works with the checkAnswer function
+            It determines if an answer is correct. by running the onclick event which has the parameter answer
+             -->
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+			<div id="timer">
+				<div id="counter"></div>
+				<div id="btimeGauge"></div>
+				<div id="timeGauge"></div>
+			</div>
+			<div id="progress"></div>
+		</div>
+		<div id="scoreContainer" style="display: none"></div>
+		<!-- <div id="mymodal" class="modal">
+		<div class="modal-content">
+			<span class="close-button">&times;</span>
+			<h1>Please enter a value</h1>
+		</div> -->
+	</div>
+	</div>
+
+
+
+
+<script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>
